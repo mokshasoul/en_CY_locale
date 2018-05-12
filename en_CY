@@ -1,0 +1,112 @@
+comment_char %
+escape_char /
+
+% This file is part of the GNU C Library and contains locale data.
+% The Free Software Foundation does not claim any copyright interest
+% in the locale data contained in this file.  The foregoing does not
+% affect the license of the GNU C Library as a whole.  It does not
+% exempt you from the conditions of the license if your use would
+% otherwise be governed by that license.
+
+% English language locale for Cyprus with Euro
+% Source: "CNG_IT"
+% Address: Exerzierstr. 25
+%    DE-13357 Berlin, Germany
+% Contact: Charis-Nicolas Georgiou
+% Email: cng_it@posteo.net
+% Tel: +49 - 1774065346
+% Language: en
+% Territory: CY
+% Option: euro
+% Date: 2018-17-02
+% Users: general
+% Charset: ISO-8859-15
+
+LC_IDENTIFICATION
+title      "English locale for Cyprus with Euro"
+source     "Free Software Foundation, Inc."
+address    "http:////www.gnu.org//software//libc//"
+contact    ""
+email      "bug-glibc-locales@gnu.org"
+tel        ""
+fax        ""
+language   "English"
+territory  "Cyprus"
+revision   "1.0"
+date       "2000-08-20"
+
+category "i18n:2012";LC_IDENTIFICATION
+category "i18n:2012";LC_CTYPE
+category "i18n:2012";LC_COLLATE
+category "i18n:2012";LC_TIME
+category "i18n:2012";LC_NUMERIC
+category "i18n:2012";LC_MONETARY
+category "i18n:2012";LC_MESSAGES
+category "i18n:2012";LC_PAPER
+category "i18n:2012";LC_NAME
+category "i18n:2012";LC_ADDRESS
+category "i18n:2012";LC_TELEPHONE
+category "i18n:2012";LC_MEASUREMENT
+END LC_IDENTIFICATION
+
+LC_CTYPE
+copy "i18n"
+
+translit_start
+include "translit_combining";""
+translit_end
+END LC_CTYPE
+
+LC_COLLATE
+copy "iso14651_t1"
+END LC_COLLATE
+
+LC_MONETARY
+int_curr_symbol       "<U0045><U0055><U0052><U0020>"
+currency_symbol       "<U20AC>"
+mon_decimal_point     "<U002E>"
+mon_thousands_sep     "<U002C>"
+mon_grouping          3
+positive_sign         ""
+negative_sign         "<U002D>"
+int_frac_digits       2
+frac_digits           2
+p_cs_precedes         0
+p_sep_by_space        0
+n_cs_precedes         1
+n_sep_by_space        0
+p_sign_posn           1
+n_sign_posn           1
+END LC_MONETARY
+
+LC_NUMERIC
+copy "en_GB"
+END LC_NUMERIC
+
+LC_TIME
+copy "en_GB"
+END LC_TIME
+
+LC_MESSAGES
+copy "en_GB"
+END LC_MESSAGES
+
+LC_PAPER
+copy "de_DE"
+END LC_PAPER
+
+LC_TELEPHONE
+copy "el_CY"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+copy "el_CY"
+END LC_MEASUREMENT
+
+LC_NAME
+copy "el_CY"
+END LC_NAME
+
+LC_ADDRESS
+copy "el_CY"
+END LC_ADDRESS

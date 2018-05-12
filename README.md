@@ -1,7 +1,7 @@
 # Description
 This locale is for Cypriots who want to have an English Locale, (e.g. choosing en_CY in KDE). The locale alleviates problems faced when using such an exotic locale, e.g. rofi not starting up because it cannot recognize the locale.
 
-Most settings used, are "copied" from the european irish locale
+Most settings used, were copied from the european irish locale and adapted to much Cyprus references
 
 The instructions below are derived from following sources:
 [Stackexchange](https://unix.stackexchange.com/questions/136920/set-custom-locales-in-gnome3-on-fedora-20)
@@ -13,14 +13,14 @@ The instructions below are derived from following sources:
 `git clone this`
     You can also fork the repository on [github](https://github.com/mokshasoul/en_CY_locale), or manualy fork it:
     ```
-        
+    git clone 
     ```
 
 2. If you forked it, you can further customize the locale by copying additional locales into the git folder. The locales can be found under
 `cd /usr/share/i18n/locales/`
 3. Package locale for your system
 ```
-sudo localedef -c -v -i en_CY -f UTF-8 hc_IL.UTF-8
+sudo localedef -c -v -i en_CY -f UTF-8 en_CY.UTF-8
 sudo cp -v en_CY /usr/share/i18n/locales/
 ```
 4. IMPORTANT: You need to edit the localedef file and include all the locales defined in the locale definition file, else the utilized copy
