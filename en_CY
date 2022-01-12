@@ -92,7 +92,7 @@ copy "en_GB"
 END LC_MESSAGES
 
 LC_PAPER
-copy "de_DE"
+copy "el_CY"
 END LC_PAPER
 
 LC_TELEPHONE
